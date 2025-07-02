@@ -4,8 +4,10 @@ import About from '@/pages/about'
 import './App.less'
 
 function App() {
+  const a = ''
   return (
     <>
+      <div>{a}</div>
       <Home></Home>
       <About></About>
     </>
