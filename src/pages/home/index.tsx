@@ -1,6 +1,6 @@
-import { useState } from "react"
-import classes from "./index.module.less"
-import { Button, Modal } from "antd"
+import { useState } from 'react'
+import classes from './index.module.less'
+import { Button, Modal } from 'antd'
 
 const Home = () => {
   const [visible, setVisible] = useState(false)
