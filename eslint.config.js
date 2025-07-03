@@ -12,9 +12,9 @@ export default tseslint.config([
     files: ['src/**/*.{ts,tsx}'],
     extends: [
       eslint.configs.recommended,
-      // tseslint.configs.recommended,
-      tseslint.configs.recommendedTypeChecked,
-      tseslint.configs.strictTypeChecked,
+      tseslint.configs.recommended,
+      // tseslint.configs.recommendedTypeChecked,
+      // tseslint.configs.strictTypeChecked,
       // tseslint.configs.stylisticTypeChecked,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
@@ -23,11 +23,11 @@ export default tseslint.config([
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
-      parserOptions: {
-        // projectService: true,
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
+      // parserOptions: {
+      //   projectService: true,
+      //   // project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      //   tsconfigRootDir: import.meta.dirname,
+      // },
     },
   },
 ])

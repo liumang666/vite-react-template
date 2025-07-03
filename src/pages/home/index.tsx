@@ -21,7 +21,14 @@ const Home = () => {
       >
         阿牛
       </Button>
-      <Modal open={visible}>1212</Modal>
+      <Modal
+        open={visible}
+        onCancel={() => {
+          setVisible(false)
+        }}
+      >
+        1212
+      </Modal>
     </>
   )
 }

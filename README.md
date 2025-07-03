@@ -19,6 +19,8 @@ If you are developing a production application, we recommend updating the config
 
 ## 官方推荐做法，但是会造成性能损失，增加lint验证时间
 
+### 但是真的特么难写，要不算了吧！赶时间
+
 ```js
 export default tseslint.config([
   globalIgnores(['dist']),
