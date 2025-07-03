@@ -11,6 +11,10 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
+# 类型感知
+
+## 官方推荐做法，但是会造成性能损失，增加lint验证时间
+
 ```js
 export default tseslint.config([
   globalIgnores(['dist']),
@@ -20,11 +24,11 @@ export default tseslint.config([
       // Other configs...
 
       // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
+      tseslint.configs.recommendedTypeChecked,
       // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules，格式化程式，这里使用prettier代替
+      tseslint.configs.stylisticTypeChecked,
 
       // Other configs...
     ],
